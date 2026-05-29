@@ -1,0 +1,8 @@
+# Core — pin versions as the pipeline stabilizes
+numpy>=1.26
+pandas>=2.2
+pillow>=10.4
+torch>=2.2
+torchvision>=0.17
+tqdm>=4.66
+scikit-learn>=1.4
