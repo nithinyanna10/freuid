@@ -1,0 +1,18 @@
+# Paths — data/raw should symlink to the Kaggle download (see scripts/setup_data.sh)
+data_dir: data/raw
+train_csv: data/raw/train_sample_labels.csv  # sample; use train.csv when full set ships
+test_csv: data/raw/test.csv
+sample_submission: data/raw/sample_submission.csv
+checkpoint: data/processed/baseline.pt
+output_dir: submissions
+
+# Training
+seed: 42
+image_size: 384
+batch_size: 4
+num_workers: 0
+backbone: resnet18
+epochs: 15
+lr: 1.0e-4
+val_fraction: 0.2
+positive_label: 1
